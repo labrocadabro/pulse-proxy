@@ -1,0 +1,8 @@
+serverAddr = "{serverAddr}"
+serverPort = "{serverPort}"
+
+[[proxies]]
+name = "{proxyName}"
+type = "http"
+customDomains = ["{domain}"]
+localPort = 8080

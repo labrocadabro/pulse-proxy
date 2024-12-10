@@ -1,0 +1,9 @@
+serverAddr = "51.222.45.193"
+serverPort = 7000
+
+[[proxies]]
+name = "user-container-http-proxy"
+type = "http"
+customDomains = ["localhost"]
+localIP = "127.0.0.1"
+localPort = 8080
