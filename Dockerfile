@@ -13,7 +13,10 @@ RUN npm install
 # Copy the rest of the application code to the container
 COPY . .
 
+# Build the NestJS application
 RUN npm run build
+RUN npm run obfuscate
+RUN rm -rf /app/src
 
 # Expose the port on which the application will run
 EXPOSE 3004
